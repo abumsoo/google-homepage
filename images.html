@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <title>Google</title>
+  <title>Google Images</title>
   <link rel="stylesheet" type="text/css" href="styles/main.css">
+  <link rel="stylesheet" type="text/css" href="styles/images.css">
   <link rel="icon" href="media/google-icon.svg" type="image/x-icon">
 </head>
 
@@ -11,21 +12,17 @@
 
   <nav id="nav-bar">
     <ul id="nav-list">
-      <span id="nav-left">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Store</a></li>
-      </span>
       <span id="nav-right">
-        <li><a href="advanced.html">Advanced</a></li>
-        <li><a href="#">Gmail</a></li>
-        <li><a href="images.html">Images</a></li>
+        <li><a href="index.html">Google Search</a></li>
       </span>
     </ul>
   </nav>
 
   <div id="main">
     <center>
-      <img id="title-logo" src="media/googlelogo_color_272x92dp.png">
+      <div title="Google Images" id="hplogo" align="left">
+        <div class="subheading"><span>Images</span></div>
+      </div>
       <form action="https://google.com/search" name="f">
         <div id="search-div">
           <span id="search-icon1">
@@ -37,9 +34,15 @@
             </svg>
           </span>
           <input type="text" id="search-bar" name="q">
+          <input type="hidden" name="tbm" value="isch">
+          <button class="img-search-btn" type="submit">
+            <span id="search-icon2"><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
+                </path>
+              </svg></span>
+          </button>
         </div>
-        <input type="submit" id="search-btn" name="btnK" value="Google Search">
-        <input type="submit" id="search-btn" name="btnI" value="I'm Feeling Lucky">
       </form>
     </center>
   </div>
@@ -60,7 +63,6 @@
       </ul>
     </footer>
   </div>
-
 </body>
 
 </html>
